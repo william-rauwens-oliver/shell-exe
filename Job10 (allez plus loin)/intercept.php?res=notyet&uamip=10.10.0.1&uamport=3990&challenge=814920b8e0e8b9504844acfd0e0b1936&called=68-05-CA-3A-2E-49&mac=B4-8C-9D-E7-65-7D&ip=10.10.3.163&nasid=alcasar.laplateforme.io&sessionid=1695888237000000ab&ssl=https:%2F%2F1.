@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Alcasar | Intercept</title>
+        <link rel="stylesheet" href="/css/new_css.css" type="text/css">
+					<script type="text/javascript">
+			function doOnLoad(result, userurl, redirurl, adminurl, timeleft) {
+				if ((result === 1) || (result === 4)) {	// success or already
+					var url;
+					if (adminurl !== '') {
+						url = adminurl;
+					} else if (redirurl !== '') {
+						url = redirurl;
+					} else if (userurl !== '') {
+						url = userurl;
+					}
+
+					if (typeof url !== 'undefined') {
+						var win = window.open('https://alcasar.laplateforme.io/status.php', '_blank');
+
+						if ((win === null) || (typeof win === 'undefined')) { // Pop-up blocked
+							window.location = 'https://alcasar.laplateforme.io/status.php';
+						} else {
+							window.location = url;
+						}
+					} else {
+						window.location = 'https://alcasar.laplateforme.io/status.php';
+					}
+				}
+				if ((result === 2) || (result === 3) || result === 5) { // failed or logoff or notyet
+					// document.form1.username.focus();
+				}
+			}
+		</script>
+    </head>
+    <body class="App-LogIn" onLoad="javascript:doOnLoad(5,'http://neverssl.com/','','','')">
+
+        <div class="App-lateral-bar">
+            <img src="/images/logo_alcasar_01.png" class="App-avatar" alt="avatar" />
+            <div class="App-headline">
+                <p>Bienvenue sur <b>Alcasar</b></p>
+            </div>
+            <div class="App-La-Plateforme">
+                <img src="/images/logo_plateforme.svg" class="App-logo" alt="logo" />
+            </div>
+            <p  class="App-Access-Control">Contrôle d'accès</p>
+			            <form method="post" action="/intercept.php" class="App-Form">
+				<input type="hidden" name="challenge" value="814920b8e0e8b9504844acfd0e0b1936">
+				<input type="hidden" name="userurl" value="http://neverssl.com/">
+
+                <input class="App-Input" type="text" placeholder="Identifiant" id="username" name="username" autocomplete="off" />
+                <!-- {formik.errors.identifier ? <div class="App-Input-Errors">{formik.errors.identifier}</div> : null} -->
+
+                <input class="App-Input" type="password" placeholder="Mot de passe" id="password"  name="password" autocomplete="off"/>
+                
+                <input value="Authentication" class="App-Button" type="submit" name="button">
+
+
+            </form>
+            <div class="App-NewSms-Registration">
+                <b style="color:#ffca4b; font-size: 20px;">INVITÉS</b><br /><br />
+                <b style="color:#ffca4b; font-size:20px;">Etape 1 : Créez votre compte</b><br />
+                Envoyez le mot de passe de votre choix par<br/>
+                SMS au 06.74.18.07.64<br /><br />
+                <b style="color:#ffca4b; font-size:20px;">Etape 2 : Connectez-vous</b><br />
+                <b>Votre identifiant</b> :<br />
+                336xxxxxxxx (votre téléphone,<br />remplacer le 0 par 33)<br /><br />
+                <b>Votre mot de passe</b> :<br />
+                celui que vous avez envoyé par SMS<br /><br />
+                <i style="font-size:12px;">(Le processus de création peut prendre 1 minute)</i>
+            </div>
+            <div class="App-Sms-Registration">
+				<a href="/email_registration_front.php" class="App-Link">Nouvel étudiant (Inscription email)</a>
+            </div>
+            <div class="App-Contact-Registration">
+			<div>Un problème ? <a href="mailto:si@laplateforme.io" class="Mail-Link"> si@laplateforme.io</a></div>
+            </div>
+        </div>
+        <div class="App-Header-Wrapper">
+            <header class="App-Header">
+            </header>
+            <main class="App-Body">
+
+                <h5 class="App-News-Title">NEWS</h5>
+				<a href=https://laplateforme.io/jerome-savajols/><article class='App-News-Article'>
+                <p class="thumbnaill"><img width="1584" height="890" src="https://laplateforme.io/wp-content/uploads/2023/07/avec-le-soutien-de-2.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://laplateforme.io/wp-content/uploads/2023/07/avec-le-soutien-de-2.png 1584w, https://laplateforme.io/wp-content/uploads/2023/07/avec-le-soutien-de-2-1280x719.png 1280w, https://laplateforme.io/wp-content/uploads/2023/07/avec-le-soutien-de-2-980x551.png 980w, https://laplateforme.io/wp-content/uploads/2023/07/avec-le-soutien-de-2-480x270.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 1584px, 100vw" /></p>
+                <div class='App-News-Article-Text'>
+                    <h4 class='App-News-Article-Title'>Jérôme Savajols vient renforcer les équipes de l’Atelier de La Plateforme</h4>
+                    <p class='App-News-Article-Overview'>
+<p>Après une carrière de plus de 40 ans dans la tech et le pilotage d’entreprises, Jérôme Savajols rejoint les équipes de La Plateforme en renfort sur son projet “Atelier”, en tant que Directeur Associé. Nous lui avons posé quelques questions :  Jérôme, peux-tu nous parler de ton parcours et de ce qui t&rsquo;anime ? Cela [&hellip;]</p>
+<p>L’article <a rel="nofollow" href="https://laplateforme.io/jerome-savajols/">Jérôme Savajols vient renforcer les équipes de l’Atelier de La Plateforme</a> est apparu en premier sur <a rel="nofollow" href="https://laplateforme.io">Ecole Informatique La Plateforme</a>.</p>
+</p>
+                </div>
+            </article> </a><a href=https://laplateforme.io/journee-speciale-alternance/><article class='App-News-Article'>
+                <p class="thumbnaill"><img width="1080" height="675" src="https://laplateforme.io/wp-content/uploads/2023/05/news-opt.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://laplateforme.io/wp-content/uploads/2023/05/news-opt.jpg 1080w, https://laplateforme.io/wp-content/uploads/2023/05/news-opt-980x613.jpg 980w, https://laplateforme.io/wp-content/uploads/2023/05/news-opt-480x300.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></p>
+                <div class='App-News-Article-Text'>
+                    <h4 class='App-News-Article-Title'>Journée Spéciales Alternance : RDV le 19 juillet à La Plateforme !</h4>
+                    <p class='App-News-Article-Overview'>
+<p>L’article <a rel="nofollow" href="https://laplateforme.io/journee-speciale-alternance/">Journée Spéciales Alternance : RDV le 19 juillet à La Plateforme !</a> est apparu en premier sur <a rel="nofollow" href="https://laplateforme.io">Ecole Informatique La Plateforme</a>.</p>
+</p>
+                </div>
+            </article> </a><a href=https://laplateforme.io/portrait-wiem-la-plateformeuse-du-mois/><article class='App-News-Article'>
+                <p class="thumbnaill"><img width="1080" height="675" src="https://laplateforme.io/wp-content/uploads/2023/06/Wiem-675x1080_Plan-de-travail-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://laplateforme.io/wp-content/uploads/2023/06/Wiem-675x1080_Plan-de-travail-1.jpg 1080w, https://laplateforme.io/wp-content/uploads/2023/06/Wiem-675x1080_Plan-de-travail-1-980x613.jpg 980w, https://laplateforme.io/wp-content/uploads/2023/06/Wiem-675x1080_Plan-de-travail-1-480x300.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></p>
+                <div class='App-News-Article-Text'>
+                    <h4 class='App-News-Article-Title'>PORTRAIT : Wiem, la Plateformeuse du mois</h4>
+                    <p class='App-News-Article-Overview'>
+<p>Étudiante en master IA, Wiem gère sa reconversion comme sa vie personnelle d&rsquo;une main de maître, une Plateformeuse exemplaire ! &nbsp; Wiem, tu peux nous en dire un peu plus sur ton parcours ? « Avant la Plateforme, j&rsquo;avais une toute autre vie. Après une licence HEC en Tunisie et un Master en Banque des Affaires [&hellip;]</p>
+<p>L’article <a rel="nofollow" href="https://laplateforme.io/portrait-wiem-la-plateformeuse-du-mois/">PORTRAIT : Wiem, la Plateformeuse du mois</a> est apparu en premier sur <a rel="nofollow" href="https://laplateforme.io">Ecole Informatique La Plateforme</a>.</p>
+</p>
+                </div>
+            </article> </a><a href=https://laplateforme.io/la-plateforme-lance-son-nouveau-master-of-science-it-business/><article class='App-News-Article'>
+                <p class="thumbnaill"><img width="500" height="500" src="https://laplateforme.io/wp-content/uploads/2023/06/kedge-business-school-bem-management-school-eurome-5b14a2381e4a44.7238737015280789041241.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://laplateforme.io/wp-content/uploads/2023/06/kedge-business-school-bem-management-school-eurome-5b14a2381e4a44.7238737015280789041241.png 500w, https://laplateforme.io/wp-content/uploads/2023/06/kedge-business-school-bem-management-school-eurome-5b14a2381e4a44.7238737015280789041241-480x480.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 500px, 100vw" /></p>
+                <div class='App-News-Article-Text'>
+                    <h4 class='App-News-Article-Title'>La Plateforme lance son nouveau Master of Science IT & Business</h4>
+                    <p class='App-News-Article-Overview'>
+<p>En collaboration avec KEDGE Business School, La Plateforme lance son programme MSc IT &amp; Business en septembre prochain, avec 3 spécialités dédiées aux technologies de l&rsquo;information (IT) : Intelligence artificielle / Data, Ingénierie du web et Sécurité système &amp; réseaux, et un tronc commun Business. MSc IT &amp; Business : une formation de 2 ans [&hellip;]</p>
+<p>L’article <a rel="nofollow" href="https://laplateforme.io/la-plateforme-lance-son-nouveau-master-of-science-it-business/">La Plateforme lance son nouveau Master of Science IT &#038; Business</a> est apparu en premier sur <a rel="nofollow" href="https://laplateforme.io">Ecole Informatique La Plateforme</a>.</p>
+</p>
+                </div>
+            </article> </a><a href=https://laplateforme.io/la-plateforme_creative/><article class='App-News-Article'>
+                <p class="thumbnaill"><img width="550" height="320" src="https://laplateforme.io/wp-content/uploads/2023/05/fce2030_550.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://laplateforme.io/wp-content/uploads/2023/05/fce2030_550.png 550w, https://laplateforme.io/wp-content/uploads/2023/05/fce2030_550-480x279.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 550px, 100vw" /></p>
+                <div class='App-News-Article-Text'>
+                    <h4 class='App-News-Article-Title'>La Plateforme, lauréate de “La grande fabrique de l’image”  du plan France 2030</h4>
+                    <p class='App-News-Article-Overview'>
+<p>La Plateforme, lauréate de “La grande fabrique de l’image” du plan France 2030, va développer une offre de formation inédite aux métiers de l’image numérique à Marseille et en Région Sud. “La Plateforme_Créative”, projet de formations aux métiers de l’image numérique, va ainsi prendre vie dans le cadre du plan France 2030 et grâce au soutien du [&hellip;]</p>
+<p>L’article <a rel="nofollow" href="https://laplateforme.io/la-plateforme_creative/">La Plateforme, lauréate de “La grande fabrique de l’image”  du plan France 2030</a> est apparu en premier sur <a rel="nofollow" href="https://laplateforme.io">Ecole Informatique La Plateforme</a>.</p>
+</p>
+                </div>
+            </article> </a><a href=https://laplateforme.io/le-plateformer-du-mois-1/><article class='App-News-Article'>
+                <p class="thumbnaill"><img width="1080" height="675" src="https://laplateforme.io/wp-content/uploads/2023/05/675x1080-portrait_etudiant.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://laplateforme.io/wp-content/uploads/2023/05/675x1080-portrait_etudiant.png 1080w, https://laplateforme.io/wp-content/uploads/2023/05/675x1080-portrait_etudiant-980x613.png 980w, https://laplateforme.io/wp-content/uploads/2023/05/675x1080-portrait_etudiant-480x300.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></p>
+                <div class='App-News-Article-Text'>
+                    <h4 class='App-News-Article-Title'>PORTRAIT : Hugo, le Plateformer du mois</h4>
+                    <p class='App-News-Article-Overview'>
+<p>Vous connaissez Hugo ? Étudiant en Bachelor IA à l&rsquo;école et passionné de data, il a tous les ingrédients du vrai Plateformer ! On lui a posé 3 questions : Tu peux nous raconter ton parcours en quelques mots ? « J&rsquo;habite Marseille depuis 5 ans, après avoir vécu pendant 10 ans à Madagascar. Et après [&hellip;]</p>
+<p>L’article <a rel="nofollow" href="https://laplateforme.io/le-plateformer-du-mois-1/">PORTRAIT : Hugo, le Plateformer du mois</a> est apparu en premier sur <a rel="nofollow" href="https://laplateforme.io">Ecole Informatique La Plateforme</a>.</p>
+</p>
+                </div>
+            </article> </a><a href=https://laplateforme.io/actucampuscannes/><article class='App-News-Article'>
+                <p class="thumbnaill"><img width="1623" height="1080" src="https://laplateforme.io/wp-content/uploads/2023/04/DSC2707P-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://laplateforme.io/wp-content/uploads/2023/04/DSC2707P-2.jpg 1623w, https://laplateforme.io/wp-content/uploads/2023/04/DSC2707P-2-1280x852.jpg 1280w, https://laplateforme.io/wp-content/uploads/2023/04/DSC2707P-2-980x652.jpg 980w, https://laplateforme.io/wp-content/uploads/2023/04/DSC2707P-2-480x319.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 1623px, 100vw" /></p>
+                <div class='App-News-Article-Text'>
+                    <h4 class='App-News-Article-Title'>La Plateforme ouvre son nouveau campus à Cannes !</h4>
+                    <p class='App-News-Article-Overview'>
+<p>L’article <a rel="nofollow" href="https://laplateforme.io/actucampuscannes/">La Plateforme ouvre son nouveau campus à Cannes !</a> est apparu en premier sur <a rel="nofollow" href="https://laplateforme.io">Ecole Informatique La Plateforme</a>.</p>
+</p>
+                </div>
+            </article> </a><a href=https://laplateforme.io/campus-academy/><article class='App-News-Article'>
+                <p class="thumbnaill"><img width="1080" height="810" src="https://laplateforme.io/wp-content/uploads/2023/04/IMG_4958-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://laplateforme.io/wp-content/uploads/2023/04/IMG_4958-1.jpg 1080w, https://laplateforme.io/wp-content/uploads/2023/04/IMG_4958-1-980x735.jpg 980w, https://laplateforme.io/wp-content/uploads/2023/04/IMG_4958-1-480x360.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></p>
+                <div class='App-News-Article-Text'>
+                    <h4 class='App-News-Article-Title'>Rocket School et La Plateforme tendent la main aux étudiants de Campus Academy</h4>
+                    <p class='App-News-Article-Overview'>
+<p>L’article <a rel="nofollow" href="https://laplateforme.io/campus-academy/">Rocket School et La Plateforme tendent la main aux étudiants de Campus Academy</a> est apparu en premier sur <a rel="nofollow" href="https://laplateforme.io">Ecole Informatique La Plateforme</a>.</p>
+</p>
+                </div>
+            </article> </a><a href=https://laplateforme.io/accelerateur-du-numerique/><article class='App-News-Article'>
+                <p class="thumbnaill"><img width="1080" height="675" src="https://laplateforme.io/wp-content/uploads/2023/03/675x1080-accelerateur-du-numerique_Plan-de-travail-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://laplateforme.io/wp-content/uploads/2023/03/675x1080-accelerateur-du-numerique_Plan-de-travail-1.jpg 1080w, https://laplateforme.io/wp-content/uploads/2023/03/675x1080-accelerateur-du-numerique_Plan-de-travail-1-980x613.jpg 980w, https://laplateforme.io/wp-content/uploads/2023/03/675x1080-accelerateur-du-numerique_Plan-de-travail-1-480x300.jpg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw" /></p>
+                <div class='App-News-Article-Text'>
+                    <h4 class='App-News-Article-Title'>Accélérateur du Numérique Amazon, le 30 mars à la Frac Marseille</h4>
+                    <p class='App-News-Article-Overview'>
+<p>Notre partenaire Amazon organise, le 30 mars prochain à la Frac, une journée d’échanges et de formation à destination des entrepreneurs marseillais, autour d’experts de la création d’entreprise et du digital. Au programme: 9h30-10h00 : Petit déjeuner d’accueil 10h00-10h40 : Plénière d&rsquo;introduction 11h00-12h00 : Atelier 1 &#8211; Avoir le bon état d&rsquo;esprit pour entreprendre, avec Nina [&hellip;]</p>
+<p>L’article <a rel="nofollow" href="https://laplateforme.io/accelerateur-du-numerique/">Accélérateur du Numérique Amazon, le 30 mars à la Frac Marseille</a> est apparu en premier sur <a rel="nofollow" href="https://laplateforme.io">Ecole Informatique La Plateforme</a>.</p>
+</p>
+                </div>
+            </article> </a><a href=https://laplateforme.io/petitapeti/><article class='App-News-Article'>
+                <p class="thumbnaill"><img width="499" height="586" src="https://laplateforme.io/wp-content/uploads/2023/03/Petitapeti4-scaled-e1678207273487.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://laplateforme.io/wp-content/uploads/2023/03/Petitapeti4-scaled-e1678207273487-499x551.jpeg 499w, https://laplateforme.io/wp-content/uploads/2023/03/Petitapeti4-scaled-e1678207273487-480x270.jpeg 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 499px) 499px, 100vw" /></p>
+                <div class='App-News-Article-Text'>
+                    <h4 class='App-News-Article-Title'>Avec Petitapeti, accompagner la transition primaire-collège grâce au numérique</h4>
+                    <p class='App-News-Article-Overview'>
+<p>Dans le cadre des cités éducatives financées par la Ville de Marseille, l’association Petitapeti et ses partenaires (Collège Izzo, ADDAP13, la Plateforme) a pour projet d’accompagner les enfants en CM2, sixième et cinquième comme leurs parents dans la transition primaire-collège.  En proposant des temps communs autour d’ateliers entre CM2 et collégiens, l’association et ses partenaires [&hellip;]</p>
+<p>L’article <a rel="nofollow" href="https://laplateforme.io/petitapeti/">Avec Petitapeti, accompagner la transition primaire-collège grâce au numérique</a> est apparu en premier sur <a rel="nofollow" href="https://laplateforme.io">Ecole Informatique La Plateforme</a>.</p>
+</p>
+                </div>
+            </article> </a><br />            </main>
+        </div>
+    </body>
+</html>
