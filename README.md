@@ -1,6 +1,6 @@
 # shell-ex
 
-Pour le job 8 et le job 9, il faudra utiliser crontab, voici les étapes :
+Pour le job 8 et le job 9, il faudra utiliser crontab, voici les étapes suivantes :
 
 crontab -e (pour permettre de lancer crontab pour le job 8 et 9)
 
